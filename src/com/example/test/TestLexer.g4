@@ -1,7 +1,7 @@
 lexer grammar TestLexer;
 
 @header {
-package com.example.text;
+package com.example.test;
 }
 
 OUTPUT:'output';
@@ -24,12 +24,7 @@ LIST : 'List';
 MAP  : 'Map';
 
 ID : ('a'..'z' | 'A'..'Z'| '1'..'9' | '#' | '*' | '<' | '>')+ ;
-/*TYPE : ('a'..'z' | 'A'..'Z'| '1'..'9' | '*')+ ;*/
 
-/*
-FUNCTION_NAME : ID ;
-CLASS_NAME : ID ;
-STRUCT_NAME : ('a'..'z' | 'A'..'Z'| '1'..'9' | '#')+ ; */
 PACKAGE_NAME : ID ('.' ID)* ;
 ANNOTATION_NAME : AT ID ; 
 
