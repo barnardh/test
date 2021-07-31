@@ -1,7 +1,7 @@
 lexer grammar TestLexer;
 
 @header {
-package com.example.text;
+package com.example.test;
 }
 
 OUTPUT:'output';
